@@ -1,0 +1,10 @@
+options:
+  organization: centaurus
+  setExitCode: false
+
+manifests:
+  yaml:
+    - ./nginx-demo.yaml
+
+exemptions:
+ - checks: [image_vulnerability, unscanned_images, topologySpreadConstraint]
