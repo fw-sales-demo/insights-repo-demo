@@ -1,1 +1,1 @@
-# finops-demo
+# Fairwids Insights FinOps Demo Repository
