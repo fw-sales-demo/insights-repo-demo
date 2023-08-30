@@ -8,7 +8,7 @@ metadata:
     team: shopping-cart-team
     owner: jp@example.com
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: nginx
@@ -30,13 +30,6 @@ spec:
             httpGet:
               path: /health
               port: http
-          resources:
-            requests:
-              cpu: 1000m
-              memory: 1G
-            limits:
-              cpu: 1000m
-              memory: 1G
           securityContext:
             allowPrivilegeEscalation: false
             privileged: false
