@@ -1,10 +1,10 @@
 options:
   organization: centaurus
-  setExitCode: false
+  setExitCode: true
 
 manifests:
   yaml:
     - ./nginx-demo.yaml
 
 exemptions:
- - checks: [image_vulnerability, unscanned_images, topologySpreadConstraint]
+ - checks: [unscanned_images, topologySpreadConstraint]
