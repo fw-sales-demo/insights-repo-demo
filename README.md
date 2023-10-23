@@ -1,7 +1,7 @@
 # Fairwids Insights FinOps Demo Repository
 
-<a href="https://insights.fairwinds.com/gh/fw-sales-demo/finops-demo">
-    <img src="https://insights.fairwinds.com/v0/gh/fw-sales-demo/finops-demo/badge.svg">
+<a href="https://insights.fairwinds.com/gh/fw-sales-demo/insights-repo-demo/">
+    <img src="https://insights.fairwinds.com/v0/gh/fw-sales-demo/insights-repo-demo/badge.svg">
 </a>
 
 This repository is used to demonstrate the CI functionality of Insights
