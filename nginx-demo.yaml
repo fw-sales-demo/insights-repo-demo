@@ -4,7 +4,6 @@ metadata:
   name: nginx-deployment
   labels:
     app: search
-    cost-center: e-commerce
     team: shopping-cart-team
     owner: jp@example.com
 spec:
