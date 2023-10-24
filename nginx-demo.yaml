@@ -4,9 +4,6 @@ metadata:
   name: nginx-deployment
   labels:
     app: search
-    cost-center: e-commerce
-    team: shopping-cart-team
-    owner: jp@example.com
 spec:
   replicas: 1
   selector:
@@ -22,20 +19,12 @@ spec:
           image: nginx:1.18-alpine
           ports:
             - containerPort: 80
-          livenessProbe:
-            httpGet:
-              path: /health
-              port: http
-          readinessProbe:
-            httpGet:
-              path: /health
-              port: http
           securityContext:
-            allowPrivilegeEscalation: false
+            allowPrivilegeEscalation: true
             privileged: false
-            readOnlyRootFilesystem: true
-            runAsNonRoot: true
+            readOnlyRootFilesystem: false
+            runAsNonRoot: false
             capabilities:
-              drop:
+              add:
                 - ALL
           imagePullPolicy: Always
