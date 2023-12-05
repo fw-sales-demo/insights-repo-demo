@@ -1,6 +1,10 @@
 options:
   organization: centaurus
   setExitCode: false
+manifests:
+  yaml:
+    - ./nginx-demo.yaml
+    - ./jenkins-deployment.yaml
 exemptions:
   - checks:
       - unscanned_images
