@@ -9,6 +9,6 @@ manifests:
 exemptions:
  - checks: [unscanned_images, topologySpreadConstraint]
 
- reports
-   trivy
+ reports:
+   trivy:
      enabled: false
