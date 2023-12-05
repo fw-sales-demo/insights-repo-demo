@@ -7,4 +7,4 @@ manifests:
     - ./nginx-demo.yaml
 
 exemptions:
- - checks: [unscanned_images, topologySpreadConstraint]
+  - checks: [unscanned_images, topologySpreadConstraint]
