@@ -22,20 +22,12 @@ spec:
           image: nginx:latest
           ports:
             - containerPort: 80
-          livenessProbe:
-            httpGet:
-              path: /health
-              port: http
-          readinessProbe:
-            httpGet:
-              path: /health
-              port: http
           securityContext:
             allowPrivilegeEscalation: false
-            privileged: false
+            privileged: true
             readOnlyRootFilesystem: true
-            runAsNonRoot: true
+            runAsNonRoot: false
             capabilities:
-              drop:
+              add:
                 - ALL
           imagePullPolicy: Always
