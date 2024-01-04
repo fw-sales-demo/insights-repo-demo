@@ -4,9 +4,9 @@ metadata:
   name: nginx-deployment
   labels:
     app: search
-    cost-center: e-commerce
-    team: shopping-cart-team
-    owner: jp@example.com
+    #cost-center: e-commerce
+    #team: shopping-cart-team
+    #owner: jp@example.com
 spec:
   replicas: 1
   selector:
@@ -30,13 +30,6 @@ spec:
             httpGet:
               path: /health
               port: http
-          resources:
-            requests:
-              memory: "64Mi"
-              cpu: "250m"
-            limits:
-              memory: "128Mi"
-              cpu: "500m"
           securityContext:
             allowPrivilegeEscalation: false
             privileged: false
