@@ -24,10 +24,8 @@ spec:
             - containerPort: 80
           securityContext:
             allowPrivilegeEscalation: false
-            privileged: true
+            privileged: false
             readOnlyRootFilesystem: true
-            runAsNonRoot: false
-            capabilities:
-              add:
-                - ALL
+            runAsNonRoot: true
+            capabilities: {}
           imagePullPolicy: Always
